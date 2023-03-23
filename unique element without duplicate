@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+
+    vector<int>arr{1,2,4,1,3,3};
+     vector<int>brr{6,4,5,3}; 
+     vector<int>crr;
+     for(int i =0;i<arr.size();i++){
+     for(int j=0;j<brr.size();j++){
+     if(arr[i]==brr[j]){
+      brr[j] =INT_MIN; 
+       }
+  
+     }
+    }
+       for(int i=0;i<arr.size();i++){
+        crr.push_back(arr[i]);
+     }
+      for(int i=0;i<brr.size();i++){
+       crr.push_back(brr[i]);
+      }
+   for(int i =0;i<crr.size();i++){
+     if(crr[i]!=INT_MIN){
+     cout<<crr[i]<<" ";
+     }
+   }
+}
