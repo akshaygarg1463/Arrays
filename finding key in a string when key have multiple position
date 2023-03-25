@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+void findkey(string str,int n,char &key,int i){
+  if(i>=n){
+    return ;
+  }
+  if(str[i]==key){
+    cout<<"found at"<< i<<endl;
+  }
+  findkey(str,n,key,i+1);
+//return ans;
+}
+
+int main() {
+string str ="akshay";
+  int n=str.length();
+  char key ='a';
+  int i=0;
+  int ans;
+findkey(str,n,key,i);
+//  cout<<ans;
+}
