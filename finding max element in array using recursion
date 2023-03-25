@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+ void findmax(vector<int>arr,int i,int& a,int &n){
+   
+  if(i>=n){
+    return;
+  }
+   if(arr[i]>a){
+    a=arr[i];
+     
+  }
+   
+  findmax(arr,i+1,a,n);
+  
+ }
+
+int main() {
+vector<int>arr{10,20,30,26,40};
+ // int value ;
+  //cout<<"enter the no whose factorial you want";
+//cin>>value;
+int i=0;
+  int n=5;
+  int a=INT_MIN;
+  findmax(arr,i,a,n);
+ cout<<a;
+  
+}
